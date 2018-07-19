@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScalingScreen" customModule="Udemy_AR" customModuleProvider="target">
+            <connections>
+                <outlet property="sceneView" destination="fbx-0a-dwG" id="2ff-N5-TVD"/>
+                <outlet property="view" destination="iN0-l3-epB" id="HWR-ID-rpp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbx-0a-dwG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </arscnView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fbx-0a-dwG" secondAttribute="bottom" id="EL1-Ac-o22"/>
+                <constraint firstItem="fbx-0a-dwG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NNO-q2-J9e"/>
+                <constraint firstItem="fbx-0a-dwG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="aUL-f5-6t9"/>
+                <constraint firstAttribute="trailing" secondItem="fbx-0a-dwG" secondAttribute="trailing" id="zQi-QO-Nc9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

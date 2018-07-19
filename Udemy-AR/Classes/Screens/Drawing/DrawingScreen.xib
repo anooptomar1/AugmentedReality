@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrawingScreen" customModule="Udemy_AR" customModuleProvider="target">
+            <connections>
+                <outlet property="drawButton" destination="gH0-m0-XlQ" id="WD2-gO-tid"/>
+                <outlet property="sceneView" destination="CXi-M2-XGI" id="tpp-eR-YNM"/>
+                <outlet property="view" destination="iN0-l3-epB" id="wEK-Vc-b9a"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CXi-M2-XGI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </arscnView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH0-m0-XlQ">
+                    <rect key="frame" x="169" y="594" width="36" height="30"/>
+                    <state key="normal" title="Draw"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CXi-M2-XGI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="61h-Qu-jBA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gH0-m0-XlQ" secondAttribute="bottom" constant="43" id="B1e-bg-9In"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="CXi-M2-XGI" secondAttribute="bottom" id="GXr-zZ-LDf"/>
+                <constraint firstItem="CXi-M2-XGI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ay7-HT-AJo"/>
+                <constraint firstItem="gH0-m0-XlQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="c5H-on-eXi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CXi-M2-XGI" secondAttribute="trailing" id="frF-Nn-0Dd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

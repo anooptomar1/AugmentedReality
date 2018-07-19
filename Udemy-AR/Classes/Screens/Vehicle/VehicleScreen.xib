@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VehicleScreen" customModule="Udemy_AR" customModuleProvider="target">
+            <connections>
+                <outlet property="sceneView" destination="E8v-K2-HJj" id="3XY-su-Izm"/>
+                <outlet property="view" destination="iN0-l3-epB" id="dYb-L1-1KC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8v-K2-HJj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </arscnView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cx-Xy-zJA">
+                    <rect key="frame" x="44" y="617" width="65" height="30"/>
+                    <state key="normal" title="ADD CAR"/>
+                    <connections>
+                        <action selector="addCar:" destination="-1" eventType="touchUpInside" id="yHf-NX-d6w"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4Cx-Xy-zJA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="44" id="2Ap-c5-c17"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="E8v-K2-HJj" secondAttribute="bottom" id="Fie-Un-gKE"/>
+                <constraint firstItem="E8v-K2-HJj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JDV-W6-VDW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4Cx-Xy-zJA" secondAttribute="bottom" constant="20" id="K8a-dM-2Ba"/>
+                <constraint firstItem="E8v-K2-HJj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ko7-0R-XGe"/>
+                <constraint firstAttribute="trailing" secondItem="E8v-K2-HJj" secondAttribute="trailing" id="XDP-fc-Pzf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
